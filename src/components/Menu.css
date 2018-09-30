@@ -1,6 +1,6 @@
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -9,12 +9,11 @@
 
 .category{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     height: 80vh;
     width: 100%;
     flex-wrap: wrap;
-    
 }
 
 .soup{
@@ -55,13 +54,8 @@
     border-radius: 3rem;
     transition: all .2s;
     cursor: pointer;
-   
 }
 
 .category-element{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     flex: 1 0 calc(33.333% - 20px);
 }

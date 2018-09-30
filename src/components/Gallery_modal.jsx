@@ -25,7 +25,7 @@ class GalleryModal extends Component {
         return (
             <div>
                 <div className="modal-overlay" onClick={closeModal}></div>
-                <div isOpen={!!src} className="modal">
+                <div className="modal">
                     <div className='modal-body'>
                         <a href="#close" className='modal-close' onClick={closeModal} onKeyDown={this.handleKeyDown}>&times;</a>
                         {hasPrev && <a href="#prev" className='modal-prev' onClick={findPrev} onKeyDown={this.handleKeyDown}>&lsaquo;</a>}

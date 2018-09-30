@@ -17,25 +17,26 @@ class Contact extends Component {
     render() {
         const position = [this.state.lat, this.state.lng];
         return (
-            <div className="contact-container">
-                <div className="contact-data">
-                    <div className="data-item">
-                        <h2><i className="fas fa-map-marker-alt"></i></h2>
-                        <p>1146 Budapest <br /> Wesselényi utca 123.</p>
+            <div className="width-container">
+                <div className="contact-container">
+                    <div className="contact-data">
+                        <div className="data-item">
+                            <h2><i className="fas fa-map-marker-alt"></i></h2>
+                            <p>1146 Budapest <br /> Wesselényi utca 123.</p>
+                        </div>
+                        <div className="data-item">
+                            <h2><i className="fas fa-envelope"></i></h2>
+                            <p>Vakvarju@Vakvarju.com</p>
+                        </div>
+                        <div className="data-item">
+                            <h2><i className="fas fa-phone"></i></h2>
+                            <p>06-23-456-234</p>
+                        </div>
+                        <div className="data-item">
+                            <h2><i className="fas fa-clock"></i></h2>
+                            <p>H-P: 9:00 - 22:00 <br />Szo: 9:00 - 0:00 <br /> V: 9:00 - 21:00 </p>
+                        </div>
                     </div>
-                    <div className="data-item">
-                        <h2><i className="fas fa-envelope"></i></h2>
-                        <p>Vakvarju@Vakvarju.com</p>
-                    </div>
-                    <div className="data-item">
-                        <h2><i className="fas fa-phone"></i></h2>
-                        <p>06-23-456-234</p>
-                    </div>
-                    <div className="data-item">
-                        <h2><i className="fas fa-clock"></i></h2>
-                        <p>H-P: 9:00 - 22:00 <br />Szo: 9:00 - 0:00 <br /> V: 9:00 - 21:00 </p>
-                    </div>
-                </div>
                     <div id="container">
                         <LeafletMap center={position} zoom={this.state.zoom}>
                             <TileLayer
@@ -49,7 +50,9 @@ class Contact extends Component {
                             </Marker>
                         </LeafletMap>
                     </div>
+                </div>
             </div>
+
         );
     }
 }

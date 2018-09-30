@@ -1,9 +1,14 @@
 import React from 'react';
 import './Menu_Category.css';
+import { NavLink } from 'react-router-dom';
 
 const Soup = () => {
     return (
-        <div className="all-food">
+        <div className="width-container">
+         <div className="all-food">
+            <div className="backpage">
+            <NavLink to="/etlap"><button className="bckpage-btn"><i className="left-back fas fa-arrow-left"></i>vissza az étlapra</button></NavLink>
+            </div>
             <div className="food-title">
                 <h1 className="soup">Levesek</h1>
                 <div className="separator-food"></div>
@@ -60,6 +65,8 @@ const Soup = () => {
                 </div>
             </div>
         </div>
+        </div>
+       
     );
 }
 
