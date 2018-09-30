@@ -1,0 +1,80 @@
+.all-food{
+ height: 100vh;
+ width: 100%;
+}
+
+.food-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 6rem;
+    
+}
+
+.separator-food{
+    width: 15%;
+    height: .3rem;
+    background-color: #c79c60;
+    
+}
+
+.separator-food2{
+    width: 230%;
+    height: 2px;
+    background-color: #c79c60;
+    margin-top: 10%;
+}
+
+.soup{
+    color: #c79c60;
+    font-weight: 400;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    
+}
+
+ .food-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3%;
+    
+ }
+
+.food-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.food-quality{
+    text-align: left;
+    font-family: 'Open sans';
+    width: 30%;
+}
+
+.food-description{
+    font-style: italic;
+}
+
+.food-name{
+    font-weight: 400;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+
+.food-price{
+    font-weight: 400;
+    font-family: 'Open sans';
+    color: #c79c60;
+    padding-bottom: 3%;
+}
+
+
+

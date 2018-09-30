@@ -1,0 +1,67 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.category{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.soup{
+    height: 12rem;
+}
+
+.main-course{
+    height: 12rem;
+}
+
+.sidedish{
+    height: 12rem;
+}
+
+.pizza{
+    height: 12rem;
+}
+
+.dessert{
+    height: 12rem;
+}
+
+.appetizer{
+    height: 12rem;
+}
+
+.element-name{
+    background-color: transparent;
+    border: none;
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.element-name:hover{
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 3rem;
+    transition: all .2s;
+    cursor: pointer;
+   
+}
+
+.category-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 calc(33.333% - 20px);
+}

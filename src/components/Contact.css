@@ -1,0 +1,48 @@
+.contact-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.contact-data{
+  padding-right: 25%;
+  line-height: 1.7;
+  margin-top: 13%;
+
+  
+}
+
+
+
+
+.data-item p {
+  font-family: 'Open sans';
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 5%;
+  text-align: left;
+}
+
+.data-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  padding-right: 17%;
+  
+}
+
+
+.leaflet-container {
+    height: 600px;
+    width: 40%;
+    position: absolute;
+  }
+
