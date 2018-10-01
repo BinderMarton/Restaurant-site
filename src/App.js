@@ -17,23 +17,36 @@ import Navbar from './components/Navbar';
 
 
 class App extends Component {
+
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      language: 'Hun'
+    }
+  }
+
+  changeLanguage = (language) => {
+    this.setState({ language })
+  }
+
   render() {
     return (
       <BrowserRouter>
         <div className="App">
-        <Navbar />
+          <Navbar />
           <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/bemutatkozas" component={AboutMe} />
-            <Route path="/elerhetoseg" component={Contact} />
-            <Route path="/galeria" component={Gallery} />
-            <Route path="/etlap" component={Menu} />
-            <Route path="/levesek" component={Soup} />
-            <Route path="/foetelek" component={MainCourse} />
-            <Route path="/eloetelek" component={Appetizer} />
-            <Route path="/pizzak" component={Pizza} />
-            <Route path="/koretek" component={SideDish} />
-            <Route path="/desszertek" component={Dessert} />
+            <Route exact path="/" render={(props) => <Home changeLanguage={this.changeLanguage} language={this.state.language} {...props}/>} />
+            <Route path="/bemutatkozas" component={AboutMe} language={this.state.language} />
+            <Route path="/elerhetoseg" component={Contact} language={this.state.language} />
+            <Route path="/galeria" component={Gallery} language={this.state.language} />
+            <Route path="/etlap" component={Menu} language={this.state.language} />
+            <Route path="/levesek" component={Soup} language={this.state.language} />
+            <Route path="/foetelek" component={MainCourse} language={this.state.language} />
+            <Route path="/eloetelek" component={Appetizer} language={this.state.language} />
+            <Route path="/pizzak" component={Pizza} language={this.state.language} />
+            <Route path="/koretek" component={SideDish} language={this.state.language} />
+            <Route path="/desszertek" component={Dessert} language={this.state.language} />
           </Switch>
         </div>
       </BrowserRouter>
