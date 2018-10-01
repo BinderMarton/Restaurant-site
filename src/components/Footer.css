@@ -1,0 +1,21 @@
+.flags-box{
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+.flag-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.flag-btn:hover {
+    cursor: pointer;
+}
+
+.flag-pic{
+    height: 3rem;
+}
+

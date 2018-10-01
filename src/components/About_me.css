@@ -26,19 +26,24 @@
 
 .about-title{
     text-align: left;
+    display: inline;
+    padding-left: 2%;
+    line-height: 1;
+    
 }
 
 .about-text{
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.7;
     font-family: 'Open sans';
     font-weight: 600;
     font-size: 1.2rem;
+    padding-left: 2%;
     
 }
 
 .about-hero{
-    margin-top: 5%;
+    margin-top: 2%;
     height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
@@ -79,13 +84,11 @@
 
 .offers{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
     padding: 6%;
     line-height: 1.6;
     text-align: left;
-    margin: 1%;
     flex-wrap: wrap;
     font-family: 'Open sans';
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Menu.css';
 import { NavLink } from 'react-router-dom';
+import { Animated } from "react-animated-css";
 
 
 class Menu extends Component {
@@ -10,7 +11,7 @@ class Menu extends Component {
                 <div className="menu">
                     <div className="category">
                         <div className="category-element">
-                            <NavLink to="/levesek"><img src={require('../img/soup.png')} alt="soup-pic" className="soup" /></NavLink>
+                        <Animated animationIn="bounceInLeft" isVisible={true}><NavLink to="/levesek"><img src={require('../img/soup.png')} alt="soup-pic" className="soup" /></NavLink></Animated>
                             <NavLink to="/levesek"><button className="element-name">Levesek</button></NavLink>
                         </div>
                         <div className="category-element">

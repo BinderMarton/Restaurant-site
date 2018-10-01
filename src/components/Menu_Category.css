@@ -19,8 +19,34 @@
     
 }
 
+
+.backpage{
+   display: flex;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 2%;
+
+}
+
+.bckpage-btn{
+    border: none;
+    background-color: transparent;
+    
+}
+
+.bckpage-btn:hover{
+    cursor: pointer;
+    background-color: #1E1E1E;
+    transition: all .3s;
+    border-radius: 1rem;
+}
+
+.bckpage-btn i {
+    font-size: 2rem;
+}
+
 .separator-food2{
-    width: 230%;
+    width: 120%;
     height: 2px;
     background-color: #c79c60;
     margin-top: 10%;
@@ -53,7 +79,7 @@
 .food-quality{
     text-align: left;
     font-family: 'Open sans';
-    width: 30%;
+    width: 80%;
 }
 
 .food-description{

@@ -1,5 +1,5 @@
 .navbar-bck{
-    width: 100vw;
+    width: 100%;
     background-color: #1E1E1E;
 }
 
@@ -9,6 +9,13 @@
     justify-content: space-around;
 }
 
+
+
+.logo-page{
+    text-decoration: none;
+    color: #fff;
+
+}
 
 .logo{
  height: 7rem;

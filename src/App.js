@@ -12,9 +12,8 @@ import Appetizer from './components/Appetizer';
 import Pizza from './components/Pizza';
 import SideDish from './components/Side_dish';
 import Dessert from './components/Dessert';
-
-
 import Navbar from './components/Navbar';
+
 
 
 class App extends Component {

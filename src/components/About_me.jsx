@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './About_me.css';
-
+import { Animated } from "react-animated-css";
 
 class AboutMe extends Component {
     render() {
@@ -10,7 +10,7 @@ class AboutMe extends Component {
                 <div className="width-container">
                     <div className="about-me">
                         <div className="about-header">
-                            <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Pic" className="about-pic" />
+                            <Animated animationIn="fadeInLeft" isVisible={true}><img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Pic" className="about-pic" /></Animated>
                             <div className="about-text">
                                 <h2 className="about-title">Rólunk</h2>
                                 <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

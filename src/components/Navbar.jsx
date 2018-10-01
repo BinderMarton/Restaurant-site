@@ -7,9 +7,10 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className="navbar-bck">
+         
             <div className="width-container">
                 <div className="navbar">
-                    <h1 className="logo-name">Vakvarjú</h1>
+               <h1 className="logo-name"><NavLink className="logo-page" to="/">Vakvarjú</NavLink></h1>
                     <NavLink className="navbar-menu logo-pic" to="/">KEZDŐLAP</NavLink>
                     <NavLink className="navbar-menu" to="/bemutatkozas">BEMUTATKOZÁS</NavLink>
                     <NavLink className="navbar-menu" to="/elerhetoseg">ELÉRHETŐSÉG</NavLink>
