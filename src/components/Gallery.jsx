@@ -14,7 +14,7 @@ class Gallery extends Component {
 
   renderImageContent = (src, index) => {
     return (
-      <div key={index} onClick={(e) => this.openModal(e, index)}>
+     <div key={index} onClick={(e) => this.openModal(e, index)}>
         <img src={src} alt="pic" />
       </div>
     )

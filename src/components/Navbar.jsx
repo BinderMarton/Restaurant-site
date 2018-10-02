@@ -1,21 +1,37 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { SideData } from "./Languages"
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className="navbar-bck">
-         
             <div className="width-container">
                 <div className="navbar">
-               <h1 className="logo-name"><NavLink className="logo-page" to="/">Vakvarjú</NavLink></h1>
-                    <NavLink className="navbar-menu logo-pic" to="/">KEZDŐLAP</NavLink>
-                    <NavLink className="navbar-menu" to="/bemutatkozas">BEMUTATKOZÁS</NavLink>
-                    <NavLink className="navbar-menu" to="/elerhetoseg">ELÉRHETŐSÉG</NavLink>
-                    <NavLink className="navbar-menu" to="/galeria">GALÉRIA</NavLink>
-                    <NavLink className="navbar-menu" to="/etlap">ÉTLAP</NavLink>
+                    <h1 className="logo-name"><NavLink className="logo-page" to="/">Vakvarjú</NavLink></h1>
+                    <div className="hamburger-menu">
+                       
+                        <div className="navbar-box">
+                            <NavLink className="navbar-menu logo-pic" to="/">{SideData[props.language].Navbar.home}</NavLink>
+                            <NavLink className="navbar-menu" to="/bemutatkozas">{SideData[props.language].Navbar.about}</NavLink>
+                            <NavLink className="navbar-menu" to="/elerhetoseg">{SideData[props.language].Navbar.contact}</NavLink>
+                            <NavLink className="navbar-menu" to="/galeria">{SideData[props.language].Navbar.gallery}</NavLink>
+                            <NavLink className="navbar-menu" to="/etlap">{SideData[props.language].Navbar.menu}</NavLink>
+                        </div>
+                        <div className="hamburger-icon">
+                            <i className="fas fa-bars"></i>
+                            <div className="navbar-box">
+                            <NavLink className="navbar-menu logo-pic" to="/">{SideData[props.language].Navbar.home}</NavLink>
+                            <NavLink className="navbar-menu" to="/bemutatkozas">{SideData[props.language].Navbar.about}</NavLink>
+                            <NavLink className="navbar-menu" to="/elerhetoseg">{SideData[props.language].Navbar.contact}</NavLink>
+                            <NavLink className="navbar-menu" to="/galeria">{SideData[props.language].Navbar.gallery}</NavLink>
+                            <NavLink className="navbar-menu" to="/etlap">{SideData[props.language].Navbar.menu}</NavLink>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

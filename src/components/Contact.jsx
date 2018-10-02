@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet'
 import './Contact.css';
-
+import {SideData} from "./Languages"
+import { Animated } from "react-animated-css";
 
 
 class Contact extends Component {
@@ -19,22 +20,22 @@ class Contact extends Component {
         return (
             <div className="width-container">
                 <div className="contact-container">
-                    <div className="contact-data">
+               <div className="contact-data">
                         <div className="data-item">
-                            <h2><i className="fas fa-map-marker-alt"></i></h2>
-                            <p>1146 Budapest <br /> Wesselényi utca 123.</p>
+                        <Animated animationIn="bounceInLeft" isVisible={true}><h2><i className="fas fa-map-marker-alt"></i></h2></Animated>
+                        <Animated animationIn="bounceInRight" isVisible={true}><p>{SideData[this.props.language].Contact.info1} <br /> {SideData[this.props.language].Contact.info2}</p></Animated>
                         </div>
                         <div className="data-item">
-                            <h2><i className="fas fa-envelope"></i></h2>
-                            <p>Vakvarju@Vakvarju.com</p>
+                        <Animated animationIn="bounceInLeft" isVisible={true}><h2><i className="fas fa-envelope"></i></h2></Animated>
+                        <Animated animationIn="bounceInRight" isVisible={true}><p>{SideData[this.props.language].Contact.info3}</p></Animated>
                         </div>
                         <div className="data-item">
-                            <h2><i className="fas fa-phone"></i></h2>
-                            <p>06-23-456-234</p>
+                        <Animated animationIn="bounceInLeft" isVisible={true}><h2><i className="fas fa-phone"></i></h2></Animated>
+                        <Animated animationIn="bounceInRight" isVisible={true}><p>{SideData[this.props.language].Contact.info4}</p></Animated>
                         </div>
                         <div className="data-item">
-                            <h2><i className="fas fa-clock"></i></h2>
-                            <p>H-P: 9:00 - 22:00 <br />Szo: 9:00 - 0:00 <br /> V: 9:00 - 21:00 </p>
+                        <Animated animationIn="bounceInLeft" isVisible={true}><h2><i className="fas fa-clock"></i></h2></Animated>
+                        <Animated animationIn="bounceInRight" isVisible={true}><p>{SideData[this.props.language].Contact.info5} <br />{SideData[this.props.language].Contact.info6} <br /> {SideData[this.props.language].Contact.info7} </p></Animated>
                         </div>
                     </div>
                     <div id="container">

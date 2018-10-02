@@ -10,6 +10,26 @@
     justify-content: space-around;
 }
 
+.navbar-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburger-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.hamburger-icon{
+    display: none;
+    text-align: right;
+    box-sizing: border-box;
+    width: 90%;
+}
+
 
 
 .logo-page{
@@ -43,4 +63,30 @@
     color: #fff;
     font-family: 'Dancing Script', cursive;
     padding-right: 20%;
+    margin-left: 1%;
+    
+}
+
+@media only screen and (max-width: 850px) {
+    .navbar-box{
+        margin-right: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-box{
+        display: none;
+    }
+
+    
+
+    .logo-name{
+        margin-left: 3%;
+    }
+
+    .hamburger-icon{
+        display: block;
+    }
+
 }

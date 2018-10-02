@@ -34,14 +34,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar />
+          <Navbar language={this.state.language} />
           <Switch>
             <Route exact path="/" render={(props) => <Home changeLanguage={this.changeLanguage} language={this.state.language} {...props}/>} />
-            <Route path="/bemutatkozas" component={AboutMe} language={this.state.language} />
-            <Route path="/elerhetoseg" component={Contact} language={this.state.language} />
+            <Route path="/bemutatkozas" render={(props) => <AboutMe  language={this.state.language} {...props}/>} />
+            <Route path="/elerhetoseg" render={(props) => <Contact  language={this.state.language} {...props}/>} />
             <Route path="/galeria" component={Gallery} language={this.state.language} />
-            <Route path="/etlap" component={Menu} language={this.state.language} />
-            <Route path="/levesek" component={Soup} language={this.state.language} />
+            <Route path="/etlap" render={(props) => <Menu  language={this.state.language} {...props}/>} />
+            <Route path="/levesek" render={(props) => <Soup  language={this.state.language} {...props}/>} />
             <Route path="/foetelek" component={MainCourse} language={this.state.language} />
             <Route path="/eloetelek" component={Appetizer} language={this.state.language} />
             <Route path="/pizzak" component={Pizza} language={this.state.language} />

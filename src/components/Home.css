@@ -11,14 +11,12 @@
 
 
 .home-container{
-    width: 100%;
     height: 70vh;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    line-height: .2;
-   position: absolute;
 
 }
 
@@ -37,8 +35,89 @@
 
 .separator{
     margin-top: 1rem;
-    width: 45%;
+    width: 45rem;
     height: 1px;
     background-color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .separator{
+        width: 40rem;
+    }
+    .home-container h1 {
+        font-size: 4rem;
+    }
+    
+    .home-container p {
+        font-size: 1.3rem;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .separator{
+        width: 35rem;
+    }
+    .home-container h1 {
+        font-size: 3.5rem;
+    }
+    
+    .home-container p {
+        font-size: 1.2rem;
+    }    
+}
+
+@media only screen and (max-width: 640px) {
+    .separator{
+        width: 30rem;
+    }
+    .home-container h1 {
+        font-size: 3rem;
+    }
+    
+    .home-container p {
+        font-size: 1.1rem;
+    }    
+}
+
+@media only screen and (max-width: 550px) {
+    .separator{
+        width: 25rem;
+    }
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-container p {
+        font-size: 1rem;
+    }    
+}
+
+@media only screen and (max-width: 440px) {
+    .separator{
+        width: 20rem;
+        margin-top: 10%;
+    }
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-container p {
+        font-size: 1.1rem;
+        line-height: .4;
+    } 
+    
+    .home-container{
+        height: 70vh;
+      
+       line-height: .4;
+    
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .separator{
+        width: 17rem;
+    }
+    
 }
 

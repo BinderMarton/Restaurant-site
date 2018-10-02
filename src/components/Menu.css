@@ -19,7 +19,6 @@
 .soup{
     height: 12rem;
 }
-
 .main-course{
     height: 12rem;
 }
@@ -59,3 +58,17 @@
 .category-element{
     flex: 0 1 0  calc(33.333% - 20px);
 }
+
+.category-element:hover *> .element-name{
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 3rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 910px) {
+    .category-element{
+        margin: 2%;
+    }
+} 

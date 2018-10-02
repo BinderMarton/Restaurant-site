@@ -12,9 +12,6 @@
   padding-left: 2%;
 }
 
-
-
-
 .data-item p {
   font-family: 'Open sans';
   letter-spacing: 2px;
@@ -42,5 +39,56 @@
     height: 600px;
     width: 40%;
     position: absolute;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .leaflet-container {
+      height: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .contact-data{
+      padding-left: 0%;
+    }
+
+    #container{
+      padding-right: 26%;
+      
+    }
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .contact-container{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    .leaflet-container {
+      height: 500px;
+      width: 100%;;
+      position: absolute;
+    }
+    #container{
+      width: 100%;
+      padding-right: 0%;
+      
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    .contact-data{
+      position: absolute;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contact-data{
+  line-height: 1.7;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+      
   }
 
