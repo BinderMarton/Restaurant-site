@@ -102,5 +102,23 @@
     padding-bottom: 60%;
 }
 
+@media only screen and (max-width: 550px) {
+    .food-item {
+        flex-direction: column;
+        
+    }
+    .food-quality{
+        width: 95%;
+    }
+    .separator-food2{
+        width: 100%;
+       
+    }
+    .backpage{
+         margin-top: 5%;
+     
+     }
+}
+
 
 

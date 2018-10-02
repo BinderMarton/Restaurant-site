@@ -67,6 +67,30 @@
     
 }
 
+@media only screen and (min-width: 1600px) {
+    .navbar-menu{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .navbar-menu{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .navbar-menu{
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navbar-box{
+        margin-right: 5%;
+    }
+
+}
+
 @media only screen and (max-width: 850px) {
     .navbar-box{
         margin-right: 3%;

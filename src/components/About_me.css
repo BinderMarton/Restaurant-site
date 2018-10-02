@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    height: 20rem;
+    height: 40vh;
     width: 100%;
 
 }
@@ -161,7 +161,6 @@ i {
 
     }
     .about-pic{
-        height: 20rem;
         margin-left: 0%;
     }
 

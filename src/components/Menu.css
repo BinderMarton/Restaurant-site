@@ -67,6 +67,19 @@
     cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1310px) {
+    .category-element{
+        flex: 1 1  calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .category-element{
+        flex: 1 1  calc(100% - 20px);
+    }
+}
+
 @media only screen and (max-width: 910px) {
     .category-element{
         margin: 2%;

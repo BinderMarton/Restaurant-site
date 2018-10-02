@@ -47,6 +47,18 @@
     }
   }
 
+  @media only screen and (max-width: 1080px) {
+    .data-item p {
+      font-size: .7rem;
+    }
+
+    .leaflet-container {
+      height: 400px;
+    }
+  }
+  
+
+
   @media only screen and (max-width: 1024px) {
     .contact-data{
       padding-left: 0%;
@@ -59,7 +71,7 @@
   }
 
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .contact-container{
       display: flex;
       justify-content: flex-start;
