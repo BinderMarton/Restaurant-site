@@ -83,11 +83,11 @@
     height: 100%;
     background: #1E1E1E;
     box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
-    width: 70%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 100%;
     z-index: 200;
     display: none;
     flex-direction: column;

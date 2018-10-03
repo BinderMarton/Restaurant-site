@@ -17,7 +17,6 @@ export const SideData = {
                 'laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                 pictureTitle: 'Zamatos, ízes húsételek mindenkor',
                 pictureText2: 'Újszerű, speciális technológiával készítjük el a ínycsiklandozó fogásainkat, amelyeket a hét minden napján megkóstolhatsz.',
-                text3: 'Amit kínálunk',
                 text3Title1: 'Minőségi ételek',
                 text3Text1: 'Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place '+
                 'of English to emphasise design elements over content. Its also called placeholder (or filler) text. Its a convenient tool for '+
@@ -69,7 +68,6 @@ export const SideData = {
                 'laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                 pictureTitle: 'Slim, delicious meat dishes at all times',
                 pictureText2: 'With our sophisticated technology, we prepare our delicious dishes that you can taste every day of the week.',
-                text3: 'Our offer',
                 text3Title1: 'Quality meals',
                 text3Text1: 'Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place '+
                 'of English to emphasise design elements over content. Its also called placeholder (or filler) text. Its a convenient tool for '+

@@ -24,7 +24,6 @@ class AboutMe extends Component {
                     </div>
                 <div className="width-container">
                     <div className="about-text2">
-                        <h1>{SideData[this.props.language].AboutUs.text3}</h1>
                         <div className="offers">
                             <div className="offer-item">
                                 <i className="fas fa-utensils"></i>
