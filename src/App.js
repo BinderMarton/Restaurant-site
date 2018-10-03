@@ -13,7 +13,8 @@ import Pizza from './components/Pizza';
 import SideDish from './components/Side_dish';
 import Dessert from './components/Dessert';
 import Navbar from './components/Navbar';
-
+import SideDrawer from './components/SideDrawer';
+import BackDrop from './components/Back_drop';
 
 
 class App extends Component {
@@ -22,8 +23,19 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      language: 'Hun'
+      language: 'Hun',
+      sideDrawerOpen: false
     }
+  }
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({sideDrawerOpen: false});
   }
 
   changeLanguage = (language) => {
@@ -31,10 +43,20 @@ class App extends Component {
   }
 
   render() {
+      let sideDrawer;
+      let backdrop;
+
+      if(this.state.sideDrawerOpen) {
+        sideDrawer = <SideDrawer click={this.backdropClickHandler}  language={this.state.language} />;
+        backdrop =  <BackDrop click={this.backdropClickHandler} />
+      }
+
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar language={this.state.language} />
+          <Navbar drawerClickHandle={this.drawerToggleClickHandler} language={this.state.language} />
+          {sideDrawer}
+          {backdrop}
           <Switch>
             <Route exact path="/" render={(props) => <Home changeLanguage={this.changeLanguage} language={this.state.language} {...props}/>} />
             <Route path="/bemutatkozas" render={(props) => <AboutMe  language={this.state.language} {...props}/>} />
@@ -47,6 +69,7 @@ class App extends Component {
             <Route path="/pizzak" component={Pizza} language={this.state.language} />
             <Route path="/koretek" component={SideDish} language={this.state.language} />
             <Route path="/desszertek" component={Dessert} language={this.state.language} />
+            
           </Switch>
         </div>
       </BrowserRouter>
