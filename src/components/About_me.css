@@ -49,6 +49,9 @@
     flex-direction: column;
     line-height: 1.8;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -ms-background-attachment: scroll;
+    -moz-background-attachment: scroll;
 }
 
 .hero-title{
@@ -74,7 +77,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 6%;
+    padding: 20px;
     line-height: 1.6;
     text-align: left;
     flex-wrap: wrap;
@@ -89,6 +92,12 @@ i {
 .offer-item{
     flex: 1 0 calc(40% - 20px);
     margin: 1%;
+}
+
+@media only screen and (min-width:1600px) {
+    .offers{
+        padding: 0px;
+    }
 }
 
 @media only screen and (max-width:870px) {

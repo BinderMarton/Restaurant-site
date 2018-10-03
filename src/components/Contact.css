@@ -43,20 +43,13 @@
 
   
 
-  @media only screen and (max-width: 1280px) {
-    .leaflet-container {
-      height: 500px;
-    }
-  }
+ 
 
   @media only screen and (max-width: 1080px) {
     .data-item p {
       font-size: .7rem;
     }
-
-    .leaflet-container {
-      height: 400px;
-    }
+   
   }
   
 

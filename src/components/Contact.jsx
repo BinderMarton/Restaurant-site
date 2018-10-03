@@ -39,7 +39,7 @@ class Contact extends Component {
                         </div>
                         <div className="facebook-box">
                         <FacebookProvider appId="588727738211152">
-                            <Page href="https://www.facebook.com/tibiatya/" tabs="timeline" />
+                            <Page height="210" href="https://www.facebook.com/tibiatya/" tabs="timeline" />
                         </FacebookProvider>
                         </div>
                     </div>

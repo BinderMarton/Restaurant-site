@@ -38,7 +38,8 @@
     cursor: pointer;
     background-color: #1E1E1E;
     transition: all .3s;
-    border-radius: 1rem;
+    border-radius: 18px;
+    padding: 3px 5px;
 }
 
 
