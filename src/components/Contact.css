@@ -41,6 +41,8 @@
     position: absolute;
   }
 
+  
+
   @media only screen and (max-width: 1280px) {
     .leaflet-container {
       height: 500px;

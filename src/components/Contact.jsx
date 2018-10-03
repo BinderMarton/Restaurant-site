@@ -37,9 +37,11 @@ class Contact extends Component {
                             <h2><i className="fas fa-clock"></i></h2>
                             <p>{SideData[this.props.language].Contact.info5} <br />{SideData[this.props.language].Contact.info6} <br /> {SideData[this.props.language].Contact.info7} </p>
                         </div>
-                        <FacebookProvider appId="123456789">
-                            <Page href="https://www.facebook.com/Kravelli-1728446920747113/" tabs="timeline" />
+                        <div className="facebook-box">
+                        <FacebookProvider appId="588727738211152">
+                            <Page href="https://www.facebook.com/tibiatya/" tabs="timeline" />
                         </FacebookProvider>
+                        </div>
                     </div>
                     <div id="container">
                         <LeafletMap center={position} zoom={this.state.zoom}>
