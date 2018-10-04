@@ -20,7 +20,7 @@
     margin-top: 0%;
     line-height: 1.7;
     font-weight: 600;
-    
+    animation: 0.8s fadeInRight ease-in;
 }
 
 
@@ -52,6 +52,7 @@
     -webkit-background-attachment: fixed;
     -ms-background-attachment: scroll;
     -moz-background-attachment: scroll;
+    animation: 0.5s fadeInUp ease;
 }
 
 .hero-title{
