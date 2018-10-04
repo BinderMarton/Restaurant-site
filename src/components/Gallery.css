@@ -33,6 +33,7 @@
 .gallery-grid img {
     width: 100%;
     border: 5px solid #c79c60;
+    animation: 0.8s zoomIn ease;
   }
 
   .gallery-grid div {
