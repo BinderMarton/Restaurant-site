@@ -14,7 +14,7 @@
 
 .separator-food{
     width: 15%;
-    height: .3rem;
+    height: 2px;
     background-color: #c79c60;
     
 }
@@ -54,12 +54,12 @@
     margin-top: 10%;
 }
 
-.soup{
+
+.soup-page-title {
     color: #c79c60;
     font-weight: 400;
     font-family: 'Open sans';
     text-transform: uppercase;
-    
 }
 
  .food-items{
@@ -75,7 +75,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    
 }
 
 .food-quality{
@@ -86,6 +85,7 @@
 
 .food-description{
     font-style: italic;
+    animation: 0.8s fadeInLeft ease;
 }
 
 .food-name{
@@ -94,13 +94,27 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 10%;
+    animation: 0.8s fadeInLeft ease;
 }
 
 .food-price{
     font-weight: 400;
     font-family: 'Open sans';
     color: #c79c60;
-    padding-bottom: 60%;
+    padding-bottom: 5%;
+    animation: 0.8s fadeInRight ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .food-name {
+        animation: none;
+    }
+    .food-description {
+        animation: none;
+    }
+    .food-price {
+        animation: none;
+    }
 }
 
 @media only screen and (max-width: 550px) {

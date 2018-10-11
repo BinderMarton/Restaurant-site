@@ -1,7 +1,7 @@
 .home{
     width: 100%;
     height: calc(100vh - 5rem);
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url('../img/hero.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url('https://firebasestorage.googleapis.com/v0/b/restaurantsite-e5621.appspot.com/o/hero.jpeg?alt=media&token=3ba5f4d7-1d64-4d96-bdc4-1e404aa0dc30');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,13 +58,16 @@
 @media only screen and (max-width: 768px) {
     .separator{
         width: 35rem;
+        animation: none;
     }
     .home-container h1 {
         font-size: 3.5rem;
+        animation: none;
     }
     
     .home-container p {
         font-size: 1.2rem;
+        animation: none;
     }    
 }
 

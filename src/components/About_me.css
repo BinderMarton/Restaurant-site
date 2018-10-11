@@ -120,6 +120,12 @@ i {
     .hero-text{
         font-size: 1.2rem;
     }
+    .about-hero{
+        animation: none;
+    }
+    .about-text{
+        animation: none;
+    }
 }
 
 @media only screen and (max-width:540px) {
